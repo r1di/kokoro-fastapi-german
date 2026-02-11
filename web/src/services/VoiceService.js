@@ -22,11 +22,12 @@ export class VoiceService {
 
             this.availableVoices = data.voices;
             
-            // Select first voice if none selected
+            // Select default German voice if none selected
             if (this.selectedVoices.size === 0) {
-                const firstVoice = this.availableVoices.find(voice => voice && voice.trim());
-                if (firstVoice) {
-                    this.addVoice(firstVoice);
+                const defaultVoice = this.availableVoices.find(v => v === 'df_eva')
+                    || this.availableVoices.find(v => v && v.trim());
+                if (defaultVoice) {
+                    this.addVoice(defaultVoice);
                 }
             }
 
