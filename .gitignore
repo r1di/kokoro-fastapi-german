@@ -73,3 +73,10 @@ uv.lock
 
 # Mac MPS virtualenv for dual testing
 .venv-mps
+
+# Browser Pilot / Claude Code
+.browser-pilot/
+.claude/
+*.png
+!assets/*.png
+!githubbanner.png
