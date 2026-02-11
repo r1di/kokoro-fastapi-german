@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 class KokoroV1Config(BaseModel):
     """Kokoro V1 configuration."""
 
-    languages: list[str] = ["en"]
+    languages: list[str] = ["de"]
 
     class Config:
         frozen = True
@@ -36,7 +36,7 @@ class ModelConfig(BaseModel):
 
     # Model filename
     pytorch_kokoro_v1_file: str = Field(
-        "v1_0/kokoro-v1_0.pth", description="PyTorch Kokoro V1 model filename"
+        "v1_0/kokoro-german-v1_1-de.pth", description="PyTorch Kokoro V1 model filename"
     )
 
     # Backend config

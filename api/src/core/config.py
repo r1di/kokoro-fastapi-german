@@ -13,9 +13,9 @@ class Settings(BaseSettings):
     # Application Settings
     output_dir: str = "output"
     output_dir_size_limit_mb: float = 500.0  # Maximum size of output directory in MB
-    default_voice: str = "af_heart"
+    default_voice: str = "df_eva"
     default_voice_code: str | None = (
-        None  # If set, overrides the first letter of voice name, though api call param still takes precedence
+        "d"  # If set, overrides the first letter of voice name, though api call param still takes precedence
     )
     use_gpu: bool = True  # Whether to use GPU acceleration if available
     device_type: str | None = (
